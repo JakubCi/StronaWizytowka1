@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@300&display=swap');
+
+
 *,
 *::after,
 *::before{
@@ -53,6 +56,7 @@ body{
 .logo{
     order: 1;
     font-size: 2.3rem;
+    opacity: 0;
 }
 
 .menu-items li{
@@ -115,7 +119,7 @@ body{
     z-index: 2;
     height: 100%;
     order:1;
-    margin-left:10vw;
+    margin-left:6vw;
     margin-top:10vw;
     
     border-left: solid 0.7vw #ff8c00;
@@ -123,23 +127,24 @@ body{
 .left h1{
     color: white;
     margin-left:20px;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 .left p{
     color:white;
     margin-top:15px;
     margin-left:20px;
-    font-size: 3vw;
+    font-size: 2vw;
     width:100%;
 }
 .left a{
-    font-size: 2vw;
+    font-size: 1.6vw;
     position: relative;
     text-decoration: none;
     color: #ff8c00;
     top:1vw;
     margin-left:30px;
     animation: czytajwiecej 0.8s linear infinite;
+    font-family: Kanit;
 }
 .left a img{
     width:20px;
@@ -154,19 +159,21 @@ body{
     height: 100%;
     margin-right:5vw;
     margin-top: 25vw;
+    
 }
 .right a{
     color:#ff8c00;
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:Kanit;
 }
 .button-contact{
     position:relative;
     border: solid 2px #ff8c00;
     align-items: center;
     text-align: center;
+    padding:5px;
 }
 .about img{
     z-index: 1;
@@ -185,6 +192,7 @@ body{
     margin-left:1vw;
     background-color: rgb(26, 26, 26);
     border-radius: 100px;
+    top: 0;
 }
 .circle2{
     width:6vw;
@@ -293,7 +301,7 @@ progress::-moz-progress-bar {
     position: relative;
     width:100%;
     height: auto;
-    padding: 20px;
+    padding: 3vw;
     background: #333;
     z-index: 2;
     text-align: center;
@@ -303,7 +311,6 @@ progress::-moz-progress-bar {
     color:#ff8c00;
     margin-left:auto;
     margin-right:auto;
-    margin-top:2vw;
 }
 .experience h1{
     font-size: 2rem;
@@ -322,14 +329,21 @@ progress::-moz-progress-bar {
     font-size: 1rem;
 }
 @media (max-width: 790px){
+    .about-container{
+        margin-right: -10%;
+    }
+    .left{
+        margin-top:20vw;
+        
+        border-left: solid 1vw #ff8c00;
+    }
+    .about img{
+        width:100%;
+    }
     .right{
-        min-width: 70px;
-        margin-left:-15vw;
-        margin-top: 20vw;
+        display: none;
     }
-    .right a{
-        font-size: 0.6rem;
-    }
+    
     .left h1{
         font-size: 5vw;
     }
