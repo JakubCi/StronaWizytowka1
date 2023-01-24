@@ -9,7 +9,7 @@
     <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
     <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
     <title>Document</title>
 </head>
@@ -52,10 +52,39 @@
             <div id="circle4"class="circle4"></div>
             
             <div class="left">
-                <h1>Łukasz Cierocki</h1>
+                <h1 id="ImieiNazwisko">Łukasz Cierocki</h1>
                 <p>Lorem ipsum dolor sit amet, labore exercitationullame.</p>
                 <a href="#">Czytaj więcej!<img src="icons8-down-arrow-26.png"></a>
             </div>
+            <script>
+                const box = document.getElementById("ImieiNazwisko");
+                const rect = box.getBoundingClientRect();
+                let logo=document.getElementById("logo")
+                function isInViewport(element) {
+                    const rect = element.getBoundingClientRect();
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                }
+                document.addEventListener('scroll', function () {
+                    if (!isInViewport(box)){
+                        logo.classList.add('EaseIn')
+                        logo.classList.remove('EaseOut')
+                        
+                    }
+                    else{
+                        logo.classList.add('EaseOut')
+                        logo.classList.remove('EaseIn')
+                        
+                    }
+                        
+                }, {
+                    passive: true
+                });
+            </script>
             <img src="lukaszZdjecie2.png">
             
             <div class="about-container"></div>
@@ -71,9 +100,32 @@
         <div class="experience">
             <h3>Kilka słów o mnie</h3>
             <h1>Lorem ipsum</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sintoccaecat cupidatat non proident, sunt in culpa qui officiadeserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit,sed do eiusmod tempor <b>incididunt</b> ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sintoccaecat cupidatat non proident, sunt in culpa qui officiadeserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sintoccaecat cupidatat non proident, sunt in culpa qui officiadeserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="experience2">
+            <div class="experience2-container">
+                <div class="icon"></div>
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sintoccaecat cupidatat non proident, sunt in culpa qui officiadeserunt mollit anim id est laborum</p>
+            </div>
+            <div class="experience2-container">
+                <div class="icon"></div>
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sintoccaecat cupidatat non proident, sunt in culpa qui officiadeserunt mollit anim id est laborum</p>
+            </div>
+            <div class="experience2-container">
+                <div class="icon"></div>
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sintoccaecat cupidatat non proident, sunt in culpa qui officiadeserunt mollit anim id est laborum</p>
+            </div>
         </div>
     </div>
+
+
+
+
+
+
     <script type="text/javascript">
         let circle1=document.getElementById("circle1")
         let circle2=document.getElementById("circle2")
