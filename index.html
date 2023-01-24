@@ -31,7 +31,7 @@
                 <li id="icons"><a href="#"><img src="icons8-linkedin-circled-30.png"></a></li>
                 <li id="icons"><a href="#"><img src="icons8-instagram-circle-30.png"></a></li>
             </ul>
-            <h1 class="logo">Łukasz Cierocki</h1>
+            <h1 id="logo"class="logo">Łukasz Cierocki</h1>
         </div>
         <progress value="0" max="1">
             <!-- Older browsers look to the old div style of progress bars -->
@@ -46,10 +46,11 @@
     </nav>
     <div class="main-container">
         <div class="about">
-            <div class="circle1"></div>
-            <div class="circle2"></div>
-            <div class="circle3"></div>
-            <div class="circle4"></div>
+            <div id="circle1"class="circle1"></div>
+            <div id="circle2"class="circle2"></div>
+            <div id="circle3"class="circle3"></div>
+            <div id="circle4"class="circle4"></div>
+            
             <div class="left">
                 <h1>Łukasz Cierocki</h1>
                 <p>Lorem ipsum dolor sit amet, labore exercitationullame.</p>
@@ -73,6 +74,21 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sintoccaecat cupidatat non proident, sunt in culpa qui officiadeserunt mollit anim id est laborum.</p>
         </div>
     </div>
+    <script type="text/javascript">
+        let circle1=document.getElementById("circle1")
+        let circle2=document.getElementById("circle2")
+        let circle3=document.getElementById("circle3")
+        let circle4=document.getElementById("circle4")
+        window.addEventListener('scroll', function(){
+            var value = window.scrollTop;
+            circle1.style.top=-value*0.5+'px';
+            circle2.style.top=-value*0.5+'px';
+            circle3.style.top=-value*0.5+'px';
+            circle4.style.top=-value*0.5+'px';
+        })
+        
+    </script>
     <script src="progressbar.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
