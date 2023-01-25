@@ -15,6 +15,34 @@ body{
     background-color: rgba(0, 0, 0, 1);
 background-image: linear-gradient(201deg, rgba(0, 0, 0, 1) 0%, rgba(75, 75, 75, 1) 57%, rgba(0, 0, 0, 1) 100%);
 }
+#button {
+    display: flex;
+    background-color: #222222;
+    border: #ff8c00 1px solid;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: opacity .5s, visibility .5s;
+    animation: border-transform 10s linear infinite alternate forwards;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  #button img{
+    width:50%;
+    margin:auto;
+  }
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines{
     display: none;
@@ -87,6 +115,7 @@ background-image: linear-gradient(201deg, rgba(0, 0, 0, 1) 0%, rgba(75, 75, 75, 
     font-weight: 500;
     transition: color 0.2s ease-in-out;
     font-family: navbarfamily;
+    cursor: pointer;
 }
 @font-face {
     font-family: navbarfamily;
@@ -922,4 +951,13 @@ progress::-moz-progress-bar {
     .navbar-container input[type="checkbox"]:checked ~ .logo{
         display: none;
     }
+}
+@keyframes border-transform{
+    0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+	14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+	28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+	42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+	56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+	70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+	84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
 }
