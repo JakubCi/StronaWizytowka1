@@ -560,7 +560,7 @@ progress::-moz-progress-bar {
     flex-direction: column;
     
 }
-.imagebg h1,.imagebg2 h1{
+.imagebg h1,.imagebg2 h1,.imagebg3 h1{
 
     color: white;
     font-size: 5vw;
@@ -593,6 +593,20 @@ progress::-moz-progress-bar {
 .imagebg2{
     width:100%;
     background-image: url("bg2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 500px; 
+    display: flex;
+    margin-top: 4vw;
+}
+.imagebg3{
+    width:100%;
+    background-image: url("bg3.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -757,7 +771,7 @@ progress::-moz-progress-bar {
         text-align: center;
         margin-top: 15vw;
     }
-    .imagebg h1,.imagebg2 h1{
+    .imagebg h1,.imagebg2 h1,.imagebg3 h1{
         font-size: 3rem;
     }
     .courses-items{
