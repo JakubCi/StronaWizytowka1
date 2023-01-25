@@ -433,6 +433,7 @@ progress::-moz-progress-bar {
     -webkit-box-shadow: 0px 0px 46px 47px rgba(36, 36, 36, 1);
     -moz-box-shadow: 0px 0px 46px 47px rgba(36, 36, 36, 1);
     box-shadow: 0px 0px 46px 47px rgba(36, 36, 36, 1);
+    z-index: 1;
 }
 .experience h3{
     position: relative;
@@ -605,10 +606,17 @@ box-shadow: 0px 0px 53px -4px rgba(255, 255, 255, 1);
     }
 }
 @media (max-width: 790px){
-    
+    .imagebg h1{
+        font-size: 3rem;
+    }
+    .courses-items{
+        width:100%;
+    }
 .courses-item{
     margin-top: 5vw;
     margin-left:auto;margin-right:auto;
+    width:99%;
+    min-width: 50px;
 }
 .courses-item3{
     left:0;
@@ -620,36 +628,38 @@ box-shadow: 0px 0px 53px -4px rgba(255, 255, 255, 1);
         justify-content: space-around;
         flex-wrap: wrap;
         width:100%;
+        
     }
     .experience2-container{
-        width:60%;
-        
+        width:80%;
+        padding: 30px;
     }
     .about-container{
         margin-right: -10%;
+
     }
     .left{
         margin-top:20vw;
-        
+        margin-left: 1vw;
         border-left: solid 1vw #ff8c00;
     }
     .about img{
         width:100%;
-        
-        margin-left: -30vw;
+        margin-left: -50vw;
     }
     .right{
         display: none;
     }
     
     .left h1{
-        font-size: 5vw;
+        font-size: 2rem;
     }
     .left p{
-        font-size: 3vw;
+        font-size: 1.5rem;
     }
     .left a{
-        font-size: 2.5vw;
+        font-size: 1rem;
+        z-index: 2;
     }
     .left a img{
         height: auto;
