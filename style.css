@@ -712,6 +712,37 @@ progress::-moz-progress-bar {
    margin-right: 6vw;
    font-family: navbarfamily;
 }
+.contact-parent{
+    display: flex;
+    width:90%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    justify-content: space-around;
+}
+.contact-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:20px;
+}
+.contact-child h1{
+    margin-top: 2vw;
+    color: #ff8c00;
+    font-family: navbarfamily;
+    margin-bottom: 1vw;
+}
+.contact-child img{
+    width: 64px;
+    
+}
+.contact-child:nth-child(2){
+    border-left: #ff8c00 2px solid;
+    border-right: #ff8c00 2px solid;
+}
+
 
 
 
@@ -757,6 +788,15 @@ progress::-moz-progress-bar {
 }
 
 @media (max-width: 790px){
+    .contact-parent{
+        flex-direction: column;
+
+    }
+    .contact-child:nth-child(2){
+        border: none;
+        border-top: #ff8c00 2px solid;
+        border-bottom: #ff8c00 2px solid;
+    }
     .prices-parent{
         width:90%;
         
