@@ -697,8 +697,55 @@ footer{
     right:0;
 }
 
+.loader{
+    z-index: 9999;
+    position: fixed;
+    top:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(53, 53, 53, 0.948);
+}
+.loader h1{
+    justify-content: center;
+    animation: loading 4s ease infinite;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: fontlogo;
 
+}
+@keyframes loading{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+@font-face {
+    font-family: fontlogo;
+    src: url(DawningofaNewDay-Regular.ttf);
+}
+.loader-child{
+    display: flex;
+    width:200px;
+    height: 200px;
+    border: #ff8c00 2px solid;
+    border-radius: 200px;
+    justify-content: center;
+    flex-wrap: wrap;
 
+}
+.loader--hidden{
+    opacity:0;
+    visibility: hidden;
+}
 
 
 
