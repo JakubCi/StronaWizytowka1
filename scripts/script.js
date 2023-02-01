@@ -33,6 +33,11 @@ $(window).blur(function() {
     document.querySelector('#title').innerHTML='Do zobaczenia'
 });
 
+document.querySelector('.logo').addEventListener('click',()=>{
+    history.scrollRestoration = "manual";
+    $(window).scrollTop(0);
+})
+
 history.scrollRestoration = "manual";
 
 $(window).on('beforeunload', function(){
