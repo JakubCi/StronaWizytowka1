@@ -569,6 +569,7 @@ background-image: linear-gradient(201deg, rgba(0, 0, 0, 1) 0%, rgba(75, 75, 75, 
     filter:grayscale(100%) */
 }
 .imgbg{
+    
     -webkit-background-attachment: fixed;
         -moz-background-attachment: fixed;
             -o-background-attachment: fixed;
@@ -578,6 +579,7 @@ background-image: linear-gradient(201deg, rgba(0, 0, 0, 1) 0%, rgba(75, 75, 75, 
             -o-background-position: center;
                 background-position: center;
     background-repeat: no-repeat;
+
     -webkit-background-size: cover;
         -moz-background-size: cover;
             -o-background-size: cover;
@@ -585,44 +587,33 @@ background-image: linear-gradient(201deg, rgba(0, 0, 0, 1) 0%, rgba(75, 75, 75, 
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box; 
+        display: -ms-flexbox; 
+            display: flex;
 }
 .imagebg{
     width:100%;
     background-image: url("bg1.jpg");
-
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     min-height: 500px; 
-    display: -webkit-box; 
-    display: -ms-flexbox; 
-    display: flex;
+
 }
 .imagebg2{
     width:100%;
     background-image: url("bg2.jpg");
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     min-height: 500px; 
-    display: -webkit-box; 
-    display: -ms-flexbox; 
-    display: flex;
     margin-top: 4vw;
+    position: relative;
 }
 .imagebg3{
     width:100%;
     background-image: url("bg3.jpg");
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     min-height: 500px; 
-    display: -webkit-box; 
-    display: -ms-flexbox; 
-    display: flex;
     margin-top: 4vw;
 }
 .courses-items{
