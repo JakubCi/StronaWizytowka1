@@ -32,3 +32,9 @@ $(window).focus(function() {
 $(window).blur(function() {
     document.querySelector('#title').innerHTML='Do zobaczenia'
 });
+
+history.scrollRestoration = "manual";
+
+$(window).on('beforeunload', function(){
+      $(window).scrollTop(0);
+});
