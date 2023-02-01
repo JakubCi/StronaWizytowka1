@@ -30,5 +30,5 @@ $(window).focus(function() {
 });
 
 $(window).blur(function() {
-    document.querySelector('#title').innerHTML='Żegnaj'
+    document.querySelector('#title').innerHTML='Do zobaczenia'
 });
