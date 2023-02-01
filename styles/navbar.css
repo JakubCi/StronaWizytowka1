@@ -14,39 +14,62 @@
 }
 
 .navbar{
+    position: -webkit-sticky;
     position: sticky;
     width: 100%;
     color: #000;
     z-index: 100;
     top:0;
     margin-bottom:0;
-    -webkit-box-shadow: 2px -26px 39px -24px rgba(255, 255, 255, 1);
-    -moz-box-shadow: 2px -26px 39px -24px rgba(255, 255, 255, 1);
     box-shadow: 2px -26px 39px -24px rgba(255, 255, 255, 1);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
 }
 
 .navbar-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 64px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .menu-items{
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .logo{
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 36.8px;
     font-size: 2.3rem;
     margin-left: -5vw;
     cursor: pointer;
+    -webkit-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     font-family: fontlogo;
+    -webkit-rotate: -5deg;
+    -moz-rotate: -5deg;
+    -ms-rotate: -5deg;
+    -o-rotate: -5deg;
     rotate: -5deg;
 }
 @font-face {
@@ -55,7 +78,9 @@
 }
 .menu-items li{
     list-style: none;
+    margin-left: 24px;
     margin-left: 1.5rem;
+    font-size: 20.8px;
     font-size: 1.3rem;
     color:white;
 }
@@ -70,6 +95,7 @@
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 500;
+    -webkit-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
     font-family: navbarfamily;
     cursor: pointer;
@@ -79,10 +105,17 @@
     src: url(BebasNeue-Regular.ttf);
 }
 #icons{
+    margin-left: 6.4px;
     margin-left: 0.4rem;
+    -webkit-transition: rotate 0.2s ease-in-out;
     transition: rotate 0.2s ease-in-out;
 }
 #icons:hover{
+    
+    -webkit-rotate: -30deg;
+    -moz-rotate: -30deg;
+    -ms-rotate: -30deg;
+    -o-rotate: -30deg;
     rotate: -30deg;
 }
 .navbar a:hover{
@@ -96,6 +129,7 @@
 /* Progress bar under navbar */
 
 progress {
+	position: -webkit-sticky;
 	position: sticky;
 	left: 0;
 	width: 100%;
@@ -146,25 +180,51 @@ progress::-moz-progress-bar {
 /* Animation to Ease in and out logo */
 
 .EaseIn{
-    animation: opacityanimation linear forwards 1s
+    -webkit-animation: opacityanimation linear forwards 1s;
+            animation: opacityanimation linear forwards 1s
 }
 .EaseOut{
-    animation: opacityanimation2 linear forwards 0.5s
+    -webkit-animation: opacityanimation2 linear forwards 0.5s;
+            animation: opacityanimation2 linear forwards 0.5s
+}
+@-webkit-keyframes opacityanimation{
+    from{
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    to{
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
 }
 @keyframes opacityanimation{
     from{
         opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     }
     to{
         opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+}
+@-webkit-keyframes opacityanimation2{
+    from{
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    to{
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     }
 }
 @keyframes opacityanimation2{
     from{
         opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     }
     to{
         opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     }
 }
 
@@ -187,6 +247,7 @@ progress::-moz-progress-bar {
     }
     .navbar{
         opacity: 0.95;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
     }
 
     .navbar-container input[type="checkbox"],
@@ -209,6 +270,7 @@ progress::-moz-progress-bar {
         left: 20px;
         z-index: 5;
         opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         cursor: pointer;
     }
     .menu-items li {
@@ -226,9 +288,16 @@ progress::-moz-progress-bar {
         top: 20px;
         left: 20px;
         z-index: 2;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .navbar-container .hamburger-lines .line{
@@ -240,17 +309,28 @@ progress::-moz-progress-bar {
     }
     
     .navbar-container .hamburger-lines .line1{
-        transform-origin: 0% 0%;
+        -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+        -webkit-transition: -webkit-transform 0.3s ease-in-out;
+        transition: -webkit-transform 0.3s ease-in-out;
         transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     }
 
     .navbar-container .hamburger-lines .line2{
+        -webkit-transition: -webkit-transform 0.2s ease-in-out;
+        transition: -webkit-transform 0.2s ease-in-out;
         transition: transform 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
     }
 
     .navbar-container .hamburger-lines .line3{
-        transform-origin: 0% 100%;
+        -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+        -webkit-transition: -webkit-transform 0.3s ease-in-out;
+        transition: -webkit-transform 0.3s ease-in-out;
         transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     }
 
     .navbar .menu-items{
@@ -258,10 +338,19 @@ progress::-moz-progress-bar {
         background: rgb(22, 22, 22);
         height: 75vh;
         width: 100%;
-        transform: translate(-150%);
+        -webkit-transform: translate(-150%);
+                transform: translate(-150%);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        transition: -webkit-transform 0.5s ease-in-out;
         transition: transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
         box-shadow:  5px 0px 10px 0px #aaa;
         overflow: scroll;
         
@@ -279,23 +368,31 @@ progress::-moz-progress-bar {
         right: 15px;
         font-size: 1.5rem;
         top:20px;
-        rotate:5deg;
+        -webkit-rotate: 5deg;
+        -moz-rotate: 5deg;
+        -ms-rotate: 5deg;
+        -o-rotate: 5deg;
+        rotate: 5deg;
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .menu-items{
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
-        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
-        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
-        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
     }
 }
 @media (max-width: 500px){
