@@ -26,11 +26,11 @@ const box = document.getElementById("ImieiNazwisko");
                     passive: true
                 });
 $(window).focus(function() {
-    document.querySelector('#title').innerHTML='Łukasz Cierocki'
+    document.querySelector('#title').innerHTML='Łukasz Cierocki >> Fizjoterapia'
 });
 
 $(window).blur(function() {
-    document.querySelector('#title').innerHTML='Do zobaczenia'
+    document.querySelector('#title').innerHTML='Do zobaczenia ponownie.'
 });
 
 document.querySelector('.logo').addEventListener('click',()=>{
