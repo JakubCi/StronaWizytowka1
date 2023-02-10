@@ -1033,8 +1033,10 @@ footer{
   -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-  -webkit-animation: rotate 4s infinite;
-          animation: rotate 4s infinite;
+}
+.loadinganimation{
+    -webkit-animation: rotate 4s infinite;
+    animation: rotate 4s infinite;
 }
 .loading:nth-child(1){
     border-color: #0044ff;
