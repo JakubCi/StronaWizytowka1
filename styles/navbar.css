@@ -1,4 +1,6 @@
 
+/* navbar items etc. */
+
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines{
     display: none;
@@ -81,6 +83,9 @@
     font-size: 20.8px;
     font-size: 1.3rem;
     color:white;
+}
+#menu-items-kalendarz{
+    color: #ff8c00;
 }
 #stopka{
    background-color: white;
