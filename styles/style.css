@@ -1132,7 +1132,7 @@ footer{
         border-bottom: #ff8c00 2px solid;
     }
     .prices-parent{
-        width:90%;
+        width:100%;
         
     }
     #tekst1{
@@ -1240,7 +1240,6 @@ footer{
     .about img{
         margin-right: -10rem;
         width:40rem;
-        bottom: 5vw;
     }
 }
 @media (max-width:420px){
