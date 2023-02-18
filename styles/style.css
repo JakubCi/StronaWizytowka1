@@ -673,7 +673,7 @@ body{
         }
 .prices-child{
     width:30%;
-    background-color: #000000;
+    background-color: #1a1a1a;
     border-bottom: #ff8c00 1px solid;
     height: auto;
     display: -webkit-box;
@@ -1117,7 +1117,7 @@ footer{
     }
     .prices-child{
         width: 80%;
-        margin-bottom: 3vw;
+        margin-bottom: 6vw;
     }
     .contact-parent{
         -webkit-box-orient: vertical;
