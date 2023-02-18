@@ -1228,6 +1228,9 @@ footer{
     #omnie{
         font-size: 13rem;
     }
+    .about-container{
+        margin-right: 20%;
+    }
 }
 @media (max-width:490px){
     #omnie{
@@ -1240,6 +1243,9 @@ footer{
     .about img{
         margin-right: -10rem;
         width:40rem;
+    }
+    .about-container{
+        margin-right: 40%;
     }
 }
 @media (max-width:420px){
