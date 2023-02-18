@@ -43,3 +43,7 @@ history.scrollRestoration = "manual";
 $(window).on('beforeunload', function(){
       $(window).scrollTop(0);
 });
+var burger = $(".checkbox");
+$('.menu-items li a').on("click", function (e) {
+    burger.click();
+  });
