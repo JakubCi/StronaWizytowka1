@@ -136,7 +136,10 @@ body{
     display: flex;
     overflow: hidden;
     top:0;
+    
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1980' height='1000' preserveAspectRatio='none' viewBox='0 0 1980 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1247%26quot%3b)' fill='none'%3e%3crect width='1980' height='1000' x='0' y='0' fill='url(%23SvgjsLinearGradient1248)'%3e%3c/rect%3e%3cpath d='M1919.687%2c327.422C1971.144%2c329.868%2c2020.351%2c303.586%2c2046.823%2c259.393C2074.028%2c213.975%2c2078.463%2c155.337%2c2049.19%2c111.223C2022.209%2c70.563%2c1968.477%2c68.701%2c1919.687%2c67.801C1868.494%2c66.856%2c1807.894%2c62.331%2c1781.634%2c106.286C1755.041%2c150.797%2c1784.437%2c204.242%2c1811.895%2c248.225C1837.201%2c288.761%2c1871.954%2c325.153%2c1919.687%2c327.422' fill='rgba(23%2c 25%2c 26%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1243.881%2c1136.192C1335.693%2c1136.142%2c1410.968%2c1071.741%2c1456.681%2c992.119C1502.173%2c912.882%2c1522.9%2c813.524%2c1473.123%2c736.906C1426.335%2c664.89%2c1329.758%2c663.857%2c1243.881%2c664.575C1159.805%2c665.278%2c1067.032%2c670.206%2c1021.188%2c740.687C972.13%2c816.11%2c986.539%2c913.949%2c1030.683%2c992.349C1075.764%2c1072.414%2c1151.997%2c1136.242%2c1243.881%2c1136.192' fill='rgba(23%2c 25%2c 26%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1411.67 352.07 a243.96 243.96 0 1 0 487.92 0 a243.96 243.96 0 1 0 -487.92 0z' fill='rgba(23%2c 25%2c 26%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1867.464%2c35.086C1898.315%2c34.628%2c1921.947%2c11.283%2c1937.599%2c-15.306C1953.541%2c-42.388%2c1963.449%2c-74.941%2c1948.509%2c-102.589C1932.966%2c-131.353%2c1900.032%2c-147.977%2c1867.464%2c-145.096C1838.641%2c-142.546%2c1822.086%2c-115.406%2c1807.954%2c-90.156C1794.291%2c-65.742%2c1781.623%2c-38.439%2c1793.63%2c-13.17C1807.155%2c15.293%2c1835.954%2c35.553%2c1867.464%2c35.086' fill='rgba(23%2c 25%2c 26%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M385.856%2c528.358C487.533%2c528.438%2c579.599%2c464.995%2c624.956%2c373.995C666.154%2c291.341%2c641.029%2c195.101%2c590.49%2c117.805C545.114%2c48.406%2c468.66%2c12.627%2c385.856%2c8.309C293.12%2c3.473%2c191.341%2c16.58%2c140.583%2c94.342C86.029%2c177.92%2c98.299%2c286.729%2c147.404%2c373.621C197.369%2c462.035%2c284.3%2c528.279%2c385.856%2c528.358' fill='rgba(23%2c 25%2c 26%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M931.32%2c717.68C982.657%2c719.31%2c1038.857%2c710.517%2c1065.77%2c666.769C1093.643%2c621.461%2c1082.391%2c563.298%2c1053.949%2c518.345C1027.519%2c476.573%2c980.7%2c456.52%2c931.32%2c454.272C876.812%2c451.791%2c815.399%2c459.215%2c787.701%2c506.226C759.735%2c553.692%2c779.934%2c613.103%2c810.888%2c658.677C837.808%2c698.312%2c883.431%2c716.159%2c931.32%2c717.68' fill='rgba(23%2c 25%2c 26%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M379.96 646.86 a198.38 198.38 0 1 0 396.76 0 a198.38 198.38 0 1 0 -396.76 0z' fill='rgba(23%2c 25%2c 26%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1344.94 28.05 a170.33 170.33 0 1 0 340.66 0 a170.33 170.33 0 1 0 -340.66 0z' fill='rgba(23%2c 25%2c 26%2c 1)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1247'%3e%3crect width='1980' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='100%25' y1='50%25' x2='0%25' y2='50%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1248'%3e%3cstop stop-color='rgba(62%2c 62%2c 62%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+
+
 }
 .about-container-parent{
 
@@ -521,6 +524,13 @@ body{
             display: flex;
             
 }
+.imgbg::after{
+    content: '';
+    position: absolute;
+    top:0;
+    height: 50px;
+    
+}
 .imagebg{
     width:100%;
     background-image: url("bg1.jpg");
@@ -794,6 +804,7 @@ footer{
     height: 500px;
     background-color: #000000;
     bottom:0;
+    margin-top: 50px;
 }
 #line{
     position: relative;
@@ -822,8 +833,9 @@ footer{
     flex-direction: column;
     color: white;
     font-size: 0.6rem;
+    padding-top: 100px;
     height: 100%;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .icons-footer{
     display: -webkit-box;
