@@ -424,19 +424,17 @@ body{
             justify-content: space-evenly;        
 }
 .experience2-animation{
-    -webkit-animation:experience2animation 0.2s linear forwards;
-            animation:experience2animation 0.2s linear forwards;
+    -webkit-animation:experience2animation 0.2s ease-in forwards;
+            animation:experience2animation 0.2s ease-in forwards;
 }
 @-webkit-keyframes experience2animation {
     from{
         opacity: 0;
-        border-radius: 50%;
         -webkit-transform:  translate(0px, 100px);
         -ms-transform:  translate(0px, 100px);
         transform:  translate(0px, 100px);
     }
     to{
-        border-radius: 0%;
         opacity: 1;
         -webkit-transform:  translate(0px, 0px);
         -ms-transform:  translate(0px, 0px);
@@ -445,7 +443,6 @@ body{
 }
 
 .experience2-container{
-    border-radius: 50%;
     -webkit-transform:  translate(0px, 100px);
     -ms-transform:  translate(0px, 100px);
     transform:  translate(0px, 100px);
@@ -591,6 +588,17 @@ body{
     padding: 20px;
     z-index: 2;
     opacity:1;
+}
+.courses-item-animation{
+    animation: coursesitemanimation 0.3s ease-in forwards;
+}
+@keyframes coursesitemanimation{
+    from{
+        transform:  translate(0px, 200px);
+    }
+    to{
+        transform:  translate(0px, 0px);
+    }
 }
 .courses-item:after{
     content:no-close-quote;
