@@ -47,19 +47,9 @@ var burger = $(".checkbox");
 $('.menu-items li a').on("click", function (e) {
     burger.click();
   });
-  const setHeight = () => {
-    document.getElementById("about").style.minHeight = window.innerHeight + "px"
-};
-
-let deviceWidth = window.matchMedia("(max-width: 1024px)");
-
-if (deviceWidth.matches) {
-    // set an event listener that detects when innerHeight changes:
-    
-        window.addEventListener("resize", setHeight);
-    
-    // call the function once to set initial height:
-    
-        setHeight();
-    }
-    
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
