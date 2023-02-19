@@ -28,9 +28,6 @@ window.addEventListener('scroll',()=>{
                 && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight) {
     
                 addClass(myElement, "courses-item-animation")
-            } else {
-    
-                console.log('Element is NOT in the viewport!');
             }
     })
 
