@@ -189,13 +189,18 @@ window.initMap = function() {
         center: uluru2, 
         styles: Styles,
       });
-    const marker = new google.maps.Marker({
+      const icon="./pin.png"
+      const marker = new google.maps.Marker({
       position: uluru,
       map: map,
+      icon: icon,
+      animation: google.maps.Animation.BOUNCE,
     });
     const marker2 = new google.maps.Marker({
         position: uluru2,
         map: map2,
+        animation: google.maps.Animation.BOUNCE,
+        icon: icon,
       });
   }
   
