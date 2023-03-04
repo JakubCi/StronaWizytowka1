@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@300&display=swap');
 
 *,
@@ -584,21 +585,10 @@ body{
     padding: 20px;
     z-index: 2;
     opacity:0;
-    -webkit-animation-delay: 0.5s;
-            animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 .courses-item-animation{
-    -webkit-animation: coursesitemanimation 0.3s ease-in forwards;
-            animation: coursesitemanimation 0.3s ease-in forwards;
-}
-@-webkit-keyframes coursesitemanimation{
-    from{
-        opacity:0;
-
-    }
-    to{
-        opacity:1
-    }
+    animation: coursesitemanimation 0.3s ease-in forwards;
 }
 @keyframes coursesitemanimation{
     from{
@@ -664,26 +654,20 @@ body{
 } */
 .courses-item1{
     margin-left: 10vw;
-    -webkit-transform: rotate(-3deg);
-        -ms-transform: rotate(-3deg);
-            transform: rotate(-3deg);
+    transform: rotate(-3deg);
 }
 .courses-item2{
     position: relative;
     margin-left:55vw;
     margin-top: 5vw;
-    -webkit-transform: rotate(2deg);
-        -ms-transform: rotate(2deg);
-            transform: rotate(2deg);
+    transform: rotate(2deg);
 }
 .courses-item3{
     position: relative;
     float:left;
     left:5vw;
     margin-top: 6vw;
-    -webkit-transform: rotate(-3deg);
-        -ms-transform: rotate(-3deg);
-            transform: rotate(-3deg);
+    transform: rotate(-3deg);
 }
 .courses-item4{
     position: relative;
@@ -693,9 +677,7 @@ body{
     margin:auto;
     margin-top: 5vw;
     margin-bottom: 2rem;
-    -webkit-transform: rotate(1deg);
-        -ms-transform: rotate(1deg);
-            transform: rotate(1deg);
+    transform: rotate(1deg);
 }
 .prices-parent{
     width:100%;
@@ -728,40 +710,22 @@ body{
     padding: 30px;
     color: white;
     opacity: 0.7;
-    -webkit-transform:  translate(0px, 100px);
-        -ms-transform:  translate(0px, 100px);
-            transform:  translate(0px, 100px);
+    transform:  translate(0px, 100px);
 }
 .prices-child:nth-child(2){
-    -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s;
+    animation-delay: 0.2s;
 }
 .prices-child-animation{
-    -webkit-animation: priceschildanimation 0.2s ease-in forwards;
-            animation: priceschildanimation 0.2s ease-in forwards;
-}
-@-webkit-keyframes priceschildanimation{
-    from{
-        opacity:0.7;
-        -webkit-transform:  translate(0px, 100px);
-                transform:  translate(0px, 100px);
-    }
-    to{
-        opacity:1;
-        -webkit-transform:  translate(0px, 0px);
-                transform:  translate(0px, 0px);
-    }
+    animation: priceschildanimation 0.3s ease-in forwards;
 }
 @keyframes priceschildanimation{
     from{
         opacity:0.7;
-        -webkit-transform:  translate(0px, 100px);
-                transform:  translate(0px, 100px);
+        transform:  translate(0px, 100px);
     }
     to{
         opacity:1;
-        -webkit-transform:  translate(0px, 0px);
-                transform:  translate(0px, 0px);
+        transform:  translate(0px, 0px);
     }
 }
 .prices-child h2{
@@ -888,45 +852,24 @@ footer{
 .footer-content{
     width:100%;
     height: 80%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .row{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width:25%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 .column{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     color: white;
     font-size: 0.6rem;
     padding-top: 100px;
     height: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
 }
 .icons-footer{
     display: -webkit-box;
@@ -1229,6 +1172,9 @@ footer{
         -ms-flex-line-pack: center;
             align-content: center
     }
+    .prices-child:nth-child(2){
+        animation-delay: 0s;
+    }
     .prices-child{
         width: 80%;
         margin-bottom: 6vw;
@@ -1342,23 +1288,14 @@ footer{
 }
 @media (max-width:600px){
     .footer-content {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
     .column{
         padding-top: 0;
         height: auto;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        align-items: center;
     }
     .column h1{
         margin: 5px;
