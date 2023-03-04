@@ -47,7 +47,7 @@ var burger = $(".checkbox");
 $('.menu-items li a').on("click", function (e) {
     burger.click();
   });
-document.addEventListener('load',()=>{
+document.addEventListener("DOMContentLoaded",()=>{
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     window.addEventListener('resize', () => {
