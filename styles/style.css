@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@300&display=swap');
 
@@ -586,10 +593,21 @@ body{
     padding: 20px;
     z-index: 2;
     opacity:0;
-    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
 }
 .courses-item-animation{
-    animation: coursesitemanimation 0.3s ease-in forwards;
+    -webkit-animation: coursesitemanimation 0.3s ease-in forwards;
+            animation: coursesitemanimation 0.3s ease-in forwards;
+}
+@-webkit-keyframes coursesitemanimation{
+    from{
+        opacity:0;
+
+    }
+    to{
+        opacity:1
+    }
 }
 @keyframes coursesitemanimation{
     from{
@@ -655,20 +673,26 @@ body{
 } */
 .courses-item1{
     margin-left: 10vw;
-    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+            transform: rotate(-3deg);
 }
 .courses-item2{
     position: relative;
     margin-left:55vw;
     margin-top: 5vw;
-    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+            transform: rotate(2deg);
 }
 .courses-item3{
     position: relative;
     float:left;
     left:5vw;
     margin-top: 6vw;
-    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+            transform: rotate(-3deg);
 }
 .courses-item4{
     position: relative;
@@ -678,7 +702,9 @@ body{
     margin:auto;
     margin-top: 5vw;
     margin-bottom: 2rem;
-    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+        -ms-transform: rotate(1deg);
+            transform: rotate(1deg);
 }
 .prices-parent{
     width:100%;
@@ -711,22 +737,40 @@ body{
     padding: 30px;
     color: white;
     opacity: 0;
-    transform:  translate(0px, 100px);
+    -webkit-transform:  translate(0px, 100px);
+        -ms-transform:  translate(0px, 100px);
+            transform:  translate(0px, 100px);
 }
 .prices-child:nth-child(2){
-    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
 }
 .prices-child-animation{
-    animation: priceschildanimation 0.3s ease-in forwards;
+    -webkit-animation: priceschildanimation 0.3s ease-in forwards;
+            animation: priceschildanimation 0.3s ease-in forwards;
+}
+@-webkit-keyframes priceschildanimation{
+    from{
+        opacity:0;
+        -webkit-transform:  translate(0px, 100px);
+                transform:  translate(0px, 100px);
+    }
+    to{
+        opacity:1;
+        -webkit-transform:  translate(0px, 0px);
+                transform:  translate(0px, 0px);
+    }
 }
 @keyframes priceschildanimation{
     from{
         opacity:0;
-        transform:  translate(0px, 100px);
+        -webkit-transform:  translate(0px, 100px);
+                transform:  translate(0px, 100px);
     }
     to{
         opacity:1;
-        transform:  translate(0px, 0px);
+        -webkit-transform:  translate(0px, 0px);
+                transform:  translate(0px, 0px);
     }
 }
 .prices-child h2{
@@ -853,32 +897,57 @@ footer{
 .footer-content{
     width:100%;
     height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width:25%;
-    justify-content: space-evenly;
-    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 .column{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     color: white;
     font-size: 0.6rem;
     height: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     
 }
 .column h1{
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     width:50%;
 }
 .column h1 a{
     text-decoration: none;
     color: #ffffff;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 .column h1 a:hover{
@@ -896,12 +965,18 @@ footer{
 .column img{
     width:60%;
     height: auto;
-    object-fit: contain;
-    filter: brightness(30%);
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-filter: brightness(30%);
+            filter: brightness(30%);
 }
 .column-image{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 40%;
 }
 .column-parent::before{
@@ -1192,9 +1267,16 @@ footer{
         top: -3vw;
     }
     .footer-content {
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     footer{
         height: 700px;
@@ -1202,7 +1284,9 @@ footer{
     .column{
         padding-top: 0;
         height: auto;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .column h1{
         margin: 5px;
@@ -1213,7 +1297,8 @@ footer{
     .column img {
         width: 15rem;
         height: auto;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
         position: absolute;
         top: 0;
         left: 2rem;
@@ -1253,7 +1338,8 @@ footer{
             align-content: center
     }
     .prices-child:nth-child(2){
-        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s;
     }
     .prices-child{
         width: 80%;
