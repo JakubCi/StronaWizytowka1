@@ -23,6 +23,18 @@ scrollTo = (element) => {
   document.getElementById("menu-items-kontakt").addEventListener('click', () => {
     scrollTo(document.querySelector('.contact'));
   });
+  document.getElementById("footer-kontakt").addEventListener('click',()=>{
+    scrollTo(document.querySelector('.contact'));
+  })
+  document.getElementById("footer-cennik").addEventListener('click',()=>{
+    scrollTo(document.querySelector('.imagebg2'));
+  })
+  document.getElementById("footer-omnie").addEventListener('click',()=>{
+    scrollTo(document.querySelector('.experience'));
+  })
+  document.getElementById("footer-szkolenia").addEventListener('click',()=>{
+    scrollTo(document.querySelector('.courses'));
+  })
 var btn = document.querySelector('#button');
 var btnimg=$('#button-img')
 $(window).scroll(function() {
@@ -43,4 +55,5 @@ btn.addEventListener('click',()=>{
     scrollTo(document.querySelector('footer'))
   }
 })
+
 
