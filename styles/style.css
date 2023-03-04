@@ -1290,6 +1290,7 @@ footer{
     }
     .column h1{
         margin: 5px;
+        width:auto;
     }
     .column-image{
         width:300px;
