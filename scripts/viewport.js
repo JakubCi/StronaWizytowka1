@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     document.addEventListener("scroll", function(event) {
         const animatedBoxes = document.getElementsByClassName("experience2-container");
-        const animatedBoxes2=document.getElementsByClassName("courses-item");
         const windowOffsetTop = window.innerHeight + window.scrollY -300;
-        const windowOffsetTop2 = window.innerHeight + window.scrollY ;
         Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
             const animatedBoxOffsetTop = animatedBox.offsetTop;
 
@@ -30,10 +28,26 @@ window.addEventListener('scroll',()=>{
                 addClass(myElement, "courses-item-animation")
             }
     })
-
+    
     
 })
-
+window.addEventListener('scroll',()=>{
+    var myElements2 = document.getElementsByClassName('prices-child')
+    
+    Array.prototype.forEach.call(myElements2, (myElement2)=>{
+        var myElementHeight2 = myElement2.offsetHeight;
+        var myElementWidth2 = myElement2.offsetWidth;
+        var bounding2 = myElement2.getBoundingClientRect();
+            if (bounding2.top >= -myElementHeight2-400 
+                && bounding2.left >= -myElementWidth2
+                && bounding2.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth2
+                && bounding2.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight2) {
+    
+                addClass(myElement2, "prices-child-animation")
+            }
+    })
+    
+})
 
 function addClass(element, className) {
     const arrayClasses = element.className.split(" ");
