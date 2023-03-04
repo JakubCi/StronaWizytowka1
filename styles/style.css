@@ -1434,7 +1434,7 @@ footer{
         width:40rem;
     }
     .right{
-        display: none;
+        margin-top: 30rem;
     }
     
     .left h1{
