@@ -49,7 +49,7 @@ $('.menu-items li a').on("click", function (e) {
   });
 
 
-window.addEventListener('load', () => {
+window.addEventListener("DOMContentLoaded", () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
