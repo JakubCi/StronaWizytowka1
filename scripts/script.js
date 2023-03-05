@@ -48,7 +48,7 @@ $('.menu-items li a').on("click", function (e) {
     burger.click();
   });
 
-window.addEventListener('resize', () => {
+window.addEventListener('load', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
