@@ -48,7 +48,28 @@ $('.menu-items li a').on("click", function (e) {
     burger.click();
   });
 
+
 window.addEventListener('load', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+let phone=document.querySelector('#contact-phone')
+let Pphone=document.querySelector('#phone-paragraf')
+phone.addEventListener('click',()=>{
+    navigator.clipboard.writeText('579 921 041');
+    Pphone.innerHTML='Skopiowano do schowka.'
+    setInterval(() => {
+        Pphone.innerHTML='+48 579 921 041'
+    }, 2000);
+})
+
+let email=document.querySelector('#contact-email')
+let Pemail=document.querySelector('#email-paragraf')
+email.addEventListener('click',()=>{
+    navigator.clipboard.writeText('lukaszcierocki@gmail.com');
+    Pemail.innerHTML='Skopiowano do schowka.'
+    setInterval(() => {
+        Pemail.innerHTML='lukaszcierocki@gmail.com'
+    }, 2000);
+})
